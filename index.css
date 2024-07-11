@@ -14,7 +14,7 @@ body {
 }
 .card-shadow {
   width: 384px;
-  min-height: 522px;
+  height: 522px;
   background-color: #111111;
   transition: 0.25s ease-in;
   border-radius: 20px;
@@ -25,7 +25,7 @@ body {
   bottom: 10px;
   right: 10px;
   width: 387px;
-  min-height: 522px;
+  height: 522px;
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -37,16 +37,17 @@ body {
 .container:hover .card {
   bottom: 20px;
   right: 20px;
-  transition: 0.25s ease-in;
+  transition: 0.25s ease-in-out;
   cursor: pointer;
 }
 .container:not(:hover) .card {
-  transition: 0.25s ease-in;
+  transition: 0.25s ease-in-out;
 }
 .container:hover .title {
   color: #f4d04e;
 }
 .article-image {
+  transition: 0.25s ease-in-out;
   max-width: 336px;
   border-radius: 10px;
 }
@@ -103,8 +104,6 @@ body {
   .card,
   .card-shadow {
     width: 327px;
-  }
-  .card-shadow {
     height: 501px;
   }
   .article-image {
